@@ -22,7 +22,9 @@ jsonpointer==3.0.0
 langchain==0.3.25
 langchain-community==0.3.24
 langchain-core==0.3.59
+langchain-openai
 langchain-text-splitters==0.3.8
+langgraph
 langsmith==0.3.42
 marshmallow==3.26.1
 multidict==6.4.3
@@ -52,5 +54,6 @@ typing-inspection==0.4.0
 typing_extensions==4.13.2
 tzdata==2025.2
 urllib3==2.4.0
+tabulate
 yarl==1.20.0
 zstandard==0.23.0

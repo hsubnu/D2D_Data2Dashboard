@@ -38,12 +38,19 @@ prompt = ChatPromptTemplate.from_messages(
 )
 
 # --- 2.2  Chat model --------------------------------------
-llm = ChatOpenAI(
-    model_name="gpt-4o", 
-    temperature=0,
-    model_kwargs={"response_format": {"type": "json_object"}},
-    openai_api_key=os.getenv("OPENAI_API_KEY")
-)
+_base_url = os.getenv("OPENAI_BASE_URL") or os.getenv("OPENAI_API_BASE")
+_llm_kwargs = {
+    "model_name": os.getenv("D2D_MODEL", "gpt-4o"),
+    "temperature": 0,
+    "openai_api_key": os.getenv("OPENAI_API_KEY"),
+}
+_use_json_mode = os.getenv("D2D_JSON_MODE", "1").lower() not in {"0", "false", "no"}
+if _use_json_mode:
+    _llm_kwargs["model_kwargs"] = {"response_format": {"type": "json_object"}}
+if _base_url:
+    _llm_kwargs["openai_api_base"] = _base_url
+
+llm = ChatOpenAI(**_llm_kwargs)
 
 # --- 2.3  Chain object ------------------------------------
 chain = prompt | llm  # (Prompt → ChatOpenAI)
@@ -55,8 +62,6 @@ def analyze_csv_with_insights(csv_path: str, user_prompt: str) -> str:
     csv_md = csv_to_markdown(csv_path)
     response = chain.invoke({"user_prompt": user_prompt, "csv_md": csv_md})
     return response.content
-
-
 
 
 

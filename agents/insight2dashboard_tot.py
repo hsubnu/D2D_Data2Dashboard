@@ -30,9 +30,10 @@ import re
 import json
 import subprocess
 import textwrap
+import argparse
 from pathlib import Path
 import sys
-from typing import List, Tuple
+from typing import List, Tuple, Optional
 
 from dotenv import load_dotenv
 import openai
@@ -135,7 +136,33 @@ Return **exactly two fenced blocks** in order and nothing else:
 # │ OpenAI call helper                                           │
 # ╰──────────────────────────────────────────────────────────────╯
 
-def _chat_and_extract(*, prompt: str, model: str, temperature: float) -> Tuple[str, str]:
+def _resolve_provider_config(
+    *,
+    model: Optional[str] = None,
+    api_key: Optional[str] = None,
+    base_url: Optional[str] = None,
+) -> Tuple[str, str, Optional[str]]:
+    load_dotenv()
+    resolved_model = model or os.getenv("D2D_MODEL", "gpt-4o")
+    resolved_api_key = api_key or os.getenv("OPENAI_API_KEY")
+    resolved_base_url = (
+        base_url
+        or os.getenv("OPENAI_BASE_URL")
+        or os.getenv("OPENAI_API_BASE")
+    )
+    if not resolved_api_key:
+        raise EnvironmentError("OPENAI_API_KEY not set")
+    return resolved_model, resolved_api_key, resolved_base_url
+
+
+def _chat_and_extract(
+    *,
+    prompt: str,
+    model: str,
+    temperature: float,
+    api_key: str,
+    base_url: Optional[str] = None,
+) -> Tuple[str, str]:
     """Return (thoughts, python_code) from one chat completion."""
 
     system_msg = """Answer with two fenced blocks: first ```thoughts, then ```python, nothing else.
@@ -153,7 +180,12 @@ Visualization Best Practices:
 - Prepare data properly before visualization (aggregation, transformation)
 - Include appropriate sizing and formatting for all visual elements"""
 
-    rsp = openai.chat.completions.create(
+    client_kwargs = {"api_key": api_key}
+    if base_url:
+        client_kwargs["base_url"] = base_url
+    client = openai.OpenAI(**client_kwargs)
+
+    rsp = client.chat.completions.create(
         model=model,
         temperature=temperature,
         messages=[
@@ -177,22 +209,26 @@ def generate_analysis(
     csv_path: str | Path,
     insight_json_path: str | Path,
     *,
-    model: str = "gpt-4o",
+    model: Optional[str] = None,
     temperature: float = 0.2,
     run_code: bool = True,
     save_dir: str | Path = ".",
     preserve_domain_insights: bool = True,
+    api_key: Optional[str] = None,
+    base_url: Optional[str] = None,
 ) -> str:
     """Generate Tree‑of‑Thought rationale and plotting script.
 
     Args:
         csv_path: Path to the dataset CSV file
         insight_json_path: Path to the insight library JSON file
-        model: OpenAI model to use (default: gpt-4o)
+        model: OpenAI-compatible model to use (default: D2D_MODEL or gpt-4o)
         temperature: Sampling temperature (default: 0.2)
         run_code: Whether to execute the generated code (default: True)
         save_dir: Directory to save output files (default: current directory)
         preserve_domain_insights: Whether to emphasize preserving domain insights (default: True)
+        api_key: Optional API key override (falls back to OPENAI_API_KEY)
+        base_url: Optional OpenAI-compatible base URL override
 
     Returns:
         The *thoughts* markdown string.
@@ -244,17 +280,20 @@ ensure the domain expertise is reflected in annotations, titles, and the narrati
     if preserve_domain_insights:
         prompt = system_guidance + "\n\n" + prompt
 
-    # ── OpenAI auth ────────────────────────────────────────────
-    load_dotenv()
-    if not (api_key := os.getenv("OPENAI_API_KEY")):
-        raise EnvironmentError("OPENAI_API_KEY not set")
-    openai.api_key = api_key
+    # ── provider config ────────────────────────────────────────
+    resolved_model, resolved_api_key, resolved_base_url = _resolve_provider_config(
+        model=model,
+        api_key=api_key,
+        base_url=base_url,
+    )
 
     # ── chat ───────────────────────────────────────────────────
     thoughts, code_body = _chat_and_extract(
         prompt=prompt,
-        model=model,
+        model=resolved_model,
         temperature=temperature,
+        api_key=resolved_api_key,
+        base_url=resolved_base_url,
     )
 
     # ── write artefacts ────────────────────────────────────────
@@ -329,8 +368,43 @@ CSV_PATH = Path(r"{csv_path}")
 # │ CLI fallback                                                │
 # ╰──────────────────────────────────────────────────────────────╯
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print("Usage: python generate_and_run.py data.csv insight.json")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(
+        description="Generate chart code from insight JSON using an OpenAI-compatible API."
+    )
+    parser.add_argument("data_csv", help="Path to input CSV data")
+    parser.add_argument("insight_json", help="Path to insight JSON")
+    parser.add_argument("--model", default=None, help="Model id (e.g. qwen-max)")
+    parser.add_argument(
+        "--base-url",
+        dest="base_url",
+        default=None,
+        help="OpenAI-compatible base URL",
+    )
+    parser.add_argument(
+        "--api-key",
+        dest="api_key",
+        default=None,
+        help="API key override (default from OPENAI_API_KEY)",
+    )
+    parser.add_argument(
+        "--save-dir",
+        dest="save_dir",
+        default=".",
+        help="Directory for analysis.py / analysis_thoughts.md / figures",
+    )
+    parser.add_argument(
+        "--no-run",
+        action="store_true",
+        help="Only generate files, do not execute analysis.py",
+    )
+    args = parser.parse_args()
 
-    generate_analysis(sys.argv[1], sys.argv[2])
+    generate_analysis(
+        args.data_csv,
+        args.insight_json,
+        model=args.model,
+        api_key=args.api_key,
+        base_url=args.base_url,
+        save_dir=args.save_dir,
+        run_code=not args.no_run,
+    )

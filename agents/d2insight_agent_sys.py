@@ -30,12 +30,34 @@ class NumpyEncoder(json.JSONEncoder):
             return obj.tolist()
         return super(NumpyEncoder, self).default(obj)
 
-llm = ChatOpenAI(
-    model_name="gpt-4o", 
-    temperature=0,
-    model_kwargs={"response_format": {"type": "json_object"}},
-    openai_api_key=os.getenv("OPENAI_API_KEY")
-)
+def _build_llm(
+    model_name: Optional[str] = None,
+    api_key: Optional[str] = None,
+    base_url: Optional[str] = None,
+) -> ChatOpenAI:
+    model = model_name or os.getenv("D2D_MODEL", "gpt-4o")
+    key = api_key or os.getenv("OPENAI_API_KEY")
+    resolved_base_url = (
+        base_url
+        or os.getenv("OPENAI_BASE_URL")
+        or os.getenv("OPENAI_API_BASE")
+    )
+
+    kwargs: Dict[str, Any] = {
+        "model_name": model,
+        "temperature": 0,
+        "openai_api_key": key,
+    }
+    use_json_mode = os.getenv("D2D_JSON_MODE", "1").lower() not in {"0", "false", "no"}
+    if use_json_mode:
+        kwargs["model_kwargs"] = {"response_format": {"type": "json_object"}}
+    if resolved_base_url:
+        kwargs["openai_api_base"] = resolved_base_url
+
+    return ChatOpenAI(**kwargs)
+
+
+llm = _build_llm()
 
 ############################################################
 # 1. LLM‑assisted DataProfiler                             #
@@ -196,6 +218,31 @@ REFLECT_PROMPT = PromptTemplate(
     )
 )
 reflect_chain = REFLECT_PROMPT | llm
+
+
+def configure_model(
+    model_name: Optional[str] = None,
+    api_key: Optional[str] = None,
+    base_url: Optional[str] = None,
+) -> None:
+    """
+    Rebuild all LLM chains with an optional OpenAI-compatible endpoint.
+    """
+    global llm
+    global profile_chain
+    global domain_chain
+    global concept_chain
+    global analysis_chain
+    global eval_chain
+    global reflect_chain
+
+    llm = _build_llm(model_name=model_name, api_key=api_key, base_url=base_url)
+    profile_chain = PROFILE_PROMPT | llm
+    domain_chain = DOMAIN_PROMPT | llm
+    concept_chain = CONCEPT_PROMPT | llm
+    analysis_chain = ANALYSIS_PROMPT | llm
+    eval_chain = EVAL_PROMPT | llm
+    reflect_chain = REFLECT_PROMPT | llm
 
 ############################################################
 # 3. Graph node functions                                  #
@@ -771,18 +818,30 @@ def build_graph(max_cycles: int = MAX_CYCLES):
 ############################################################
 # 5. Create agent function - COMPLETELY REVISED            #
 ############################################################
-def run_domain_detector(csv_path: str, max_cycles: int = MAX_CYCLES) -> Dict[str, Any]:
+def run_domain_detector(
+    csv_path: str,
+    max_cycles: int = MAX_CYCLES,
+    model_name: Optional[str] = None,
+    api_key: Optional[str] = None,
+    base_url: Optional[str] = None,
+) -> Dict[str, Any]:
     """
     Run the data profiling agent on the specified CSV file with improved error handling.
     
     Args:
         csv_path: Path to the CSV file to analyze
         max_cycles: Maximum number of improvement cycles
+        model_name: Optional model id (e.g. qwen-max)
+        api_key: Optional API key override (falls back to OPENAI_API_KEY)
+        base_url: Optional OpenAI-compatible base URL override
         
     Returns:
         Dictionary containing the analysis results
     """
     try:
+        # Allow runtime switch to any OpenAI-compatible provider/model.
+        configure_model(model_name=model_name, api_key=api_key, base_url=base_url)
+
         # Read the CSV file to verify it exists and is valid
         df = pd.read_csv(csv_path)
         print(f"Successfully read CSV: {len(df)} rows, {len(df.columns)} columns")
