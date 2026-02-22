@@ -1,0 +1,1279 @@
+{
+  "profile": {
+    "raw": {
+      "n_rows": 286,
+      "n_cols": 56,
+      "columns": {
+        "\u5145\u7535\u7ad9": {
+          "dtype": "object",
+          "unique_ratio": 0.2483,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "   \u56db\u5ddd\u7701\u6210\u90fd\u5e02\u751f\u7269\u7814\u7a76\u6240\u5bbf\u820d\u505c\u8f66\u573a\u5145\u7535\u7ad9\uff08\u5185\u90e8\u4f7f\u7528\uff09",
+            "   \u56db\u5ddd\u7701\u6210\u90fd\u5e02\u751f\u7269\u7814\u7a76\u6240\u5bbf\u820d\u505c\u8f66\u573a\u5145\u7535\u7ad9\uff08\u5185\u90e8\u4f7f\u7528\uff09"
+          ]
+        },
+        "\u8fd0\u7ef4\u5355\u4f4d\u7f16\u7801": {
+          "dtype": "int64",
+          "unique_ratio": 0.0105,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "3000020000000",
+            "3000020000000"
+          ],
+          "min": 0,
+          "max": 3000020000000,
+          "mean": 2821843986944.056,
+          "std": 710005211067.1898
+        },
+        "\u5f53\u524d\u6708\u4efd": {
+          "dtype": "int64",
+          "unique_ratio": 0.0175,
+          "sample": [
+            "2",
+            "3",
+            "4",
+            "2",
+            "3"
+          ],
+          "min": 2,
+          "max": 6,
+          "mean": 4.0175,
+          "std": 1.4178
+        },
+        "\u5bf9\u6bd4\u6708\u4efd": {
+          "dtype": "int64",
+          "unique_ratio": 0.0175,
+          "sample": [
+            "1",
+            "2",
+            "3",
+            "1",
+            "2"
+          ],
+          "min": 1,
+          "max": 5,
+          "mean": 3.0175,
+          "std": 1.4178
+        },
+        "\u4ea4\u6613\u6d41\u6c34\u53f7_\u6570\u91cf_\u5f53\u524d\u503c": {
+          "dtype": "int64",
+          "unique_ratio": 0.5944,
+          "sample": [
+            "284",
+            "696",
+            "2",
+            "109",
+            "125"
+          ],
+          "min": 1,
+          "max": 6807,
+          "mean": 430.3986,
+          "std": 1015.0661
+        },
+        "\u4ea4\u6613\u6d41\u6c34\u53f7_\u6570\u91cf_\u5bf9\u6bd4\u503c": {
+          "dtype": "int64",
+          "unique_ratio": 0.5804,
+          "sample": [
+            "59",
+            "284",
+            "696",
+            "125",
+            "109"
+          ],
+          "min": 1,
+          "max": 7426,
+          "mean": 446.6434,
+          "std": 1037.7278
+        },
+        "\u4ea4\u6613\u6d41\u6c34\u53f7_\u6570\u91cf_\u53d8\u5316\u503c": {
+          "dtype": "int64",
+          "unique_ratio": 0.4476,
+          "sample": [
+            "225",
+            "412",
+            "-694",
+            "-16",
+            "16"
+          ],
+          "min": -5343,
+          "max": 5556,
+          "mean": -16.2448,
+          "std": 597.9086
+        },
+        "\u4ea4\u6613\u6d41\u6c34\u53f7_\u6570\u91cf_\u53d8\u5316\u7387": {
+          "dtype": "float64",
+          "unique_ratio": 0.8392,
+          "sample": [
+            "381.3559322033898",
+            "145.0704225352113",
+            "-99.71264367816092",
+            "-12.8",
+            "14.67889908256881"
+          ],
+          "min": -99.71264367816092,
+          "max": 6909.999999999999,
+          "mean": 77.9646,
+          "std": 630.4641
+        },
+        "\u8ba2\u5355\u6e20\u9053_e\u5145\u7535\u5fae\u4fe1\u5c0f\u7a0b\u5e8f_\u6570\u91cf_\u5f53\u524d\u503c": {
+          "dtype": "int64",
+          "unique_ratio": 0.3007,
+          "sample": [
+            "9",
+            "186",
+            "0",
+            "9",
+            "8"
+          ],
+          "min": 0,
+          "max": 3991,
+          "mean": 188.5839,
+          "std": 534.4556
+        },
+        "\u8ba2\u5355\u6e20\u9053_e\u5145\u7535\u5fae\u4fe1\u5c0f\u7a0b\u5e8f_\u6570\u91cf_\u5bf9\u6bd4\u503c": {
+          "dtype": "int64",
+          "unique_ratio": 0.3042,
+          "sample": [
+            "0",
+            "9",
+            "186",
+            "15",
+            "9"
+          ],
+          "min": 0,
+          "max": 3991,
+          "mean": 184.9755,
+          "std": 504.417
+        },
+        "\u8ba2\u5355\u6e20\u9053_e\u5145\u7535\u5fae\u4fe1\u5c0f\u7a0b\u5e8f_\u6570\u91cf_\u53d8\u5316\u503c": {
+          "dtype": "int64",
+          "unique_ratio": 0.2937,
+          "sample": [
+            "9",
+            "177",
+            "-186",
+            "-6",
+            "-1"
+          ],
+          "min": -1440,
+          "max": 3346,
+          "mean": 3.6084,
+          "std": 311.0987
+        },
+        "\u8ba2\u5355\u6e20\u9053_e\u5145\u7535\u5fae\u4fe1\u5c0f\u7a0b\u5e8f_\u6570\u91cf_\u53d8\u5316\u7387": {
+          "dtype": "float64",
+          "unique_ratio": 0.3811,
+          "sample": [
+            "100.0",
+            "1966.666666666667",
+            "-100.0",
+            "-40.0",
+            "-11.11111111111111"
+          ],
+          "min": -100.0,
+          "max": 5369.23076923077,
+          "mean": 61.2117,
+          "std": 452.7966
+        },
+        "\u8ba2\u5355\u6e20\u9053_\u6b63\u5411\u4e92\u8054\u4e92\u901a_\u6570\u91cf_\u5f53\u524d\u503c": {
+          "dtype": "int64",
+          "unique_ratio": 0.1748,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "min": 0,
+          "max": 3057,
+          "mean": 33.7902,
+          "std": 222.9133
+        },
+        "\u8ba2\u5355\u6e20\u9053_\u6b63\u5411\u4e92\u8054\u4e92\u901a_\u6570\u91cf_\u5bf9\u6bd4\u503c": {
+          "dtype": "int64",
+          "unique_ratio": 0.1748,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "min": 0,
+          "max": 3338,
+          "mean": 51.5524,
+          "std": 320.0237
+        },
+        "\u8ba2\u5355\u6e20\u9053_\u6b63\u5411\u4e92\u8054\u4e92\u901a_\u6570\u91cf_\u53d8\u5316\u503c": {
+          "dtype": "int64",
+          "unique_ratio": 0.1678,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "min": -2435,
+          "max": 125,
+          "mean": -17.7622,
+          "std": 164.6356
+        },
+        "\u8ba2\u5355\u6e20\u9053_\u6b63\u5411\u4e92\u8054\u4e92\u901a_\u6570\u91cf_\u53d8\u5316\u7387": {
+          "dtype": "float64",
+          "unique_ratio": 0.2098,
+          "sample": [
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0"
+          ],
+          "min": -100.0,
+          "max": 5300.0,
+          "mean": 28.4514,
+          "std": 339.4556
+        },
+        "\u8ba2\u5355\u6e20\u9053_e\u5145\u7535Android_\u6570\u91cf_\u5f53\u524d\u503c": {
+          "dtype": "int64",
+          "unique_ratio": 0.3881,
+          "sample": [
+            "57",
+            "117",
+            "2",
+            "71",
+            "79"
+          ],
+          "min": 0,
+          "max": 1092,
+          "mean": 68.9056,
+          "std": 147.8169
+        },
+        "\u8ba2\u5355\u6e20\u9053_e\u5145\u7535Android_\u6570\u91cf_\u5bf9\u6bd4\u503c": {
+          "dtype": "int64",
+          "unique_ratio": 0.4056,
+          "sample": [
+            "47",
+            "57",
+            "117",
+            "61",
+            "71"
+          ],
+          "min": 0,
+          "max": 1037,
+          "mean": 72.4371,
+          "std": 148.128
+        },
+        "\u8ba2\u5355\u6e20\u9053_e\u5145\u7535Android_\u6570\u91cf_\u53d8\u5316\u503c": {
+          "dtype": "int64",
+          "unique_ratio": 0.3077,
+          "sample": [
+            "10",
+            "60",
+            "-115",
+            "10",
+            "8"
+          ],
+          "min": -691,
+          "max": 863,
+          "mean": -3.5315,
+          "std": 85.4947
+        },
+        "\u8ba2\u5355\u6e20\u9053_e\u5145\u7535Android_\u6570\u91cf_\u53d8\u5316\u7387": {
+          "dtype": "float64",
+          "unique_ratio": 0.6538,
+          "sample": [
+            "21.27659574468085",
+            "105.2631578947368",
+            "-98.29059829059828",
+            "16.39344262295082",
+            "11.26760563380282"
+          ],
+          "min": -100.0,
+          "max": 3752.173913043478,
+          "mean": 23.0922,
+          "std": 244.7644
+        },
+        "\u8ba2\u5355\u6e20\u9053_e\u5145\u7535ios_\u6570\u91cf_\u5f53\u524d\u503c": {
+          "dtype": "int64",
+          "unique_ratio": 0.2587,
+          "sample": [
+            "68",
+            "16",
+            "0",
+            "29",
+            "34"
+          ],
+          "min": 0,
+          "max": 458,
+          "mean": 24.7587,
+          "std": 61.4722
+        },
+        "\u8ba2\u5355\u6e20\u9053_e\u5145\u7535ios_\u6570\u91cf_\u5bf9\u6bd4\u503c": {
+          "dtype": "int64",
+          "unique_ratio": 0.2692,
+          "sample": [
+            "12",
+            "68",
+            "16",
+            "46",
+            "29"
+          ],
+          "min": 0,
+          "max": 508,
+          "mean": 26.5839,
+          "std": 62.6331
+        },
+        "\u8ba2\u5355\u6e20\u9053_e\u5145\u7535ios_\u6570\u91cf_\u53d8\u5316\u503c": {
+          "dtype": "int64",
+          "unique_ratio": 0.2343,
+          "sample": [
+            "56",
+            "-52",
+            "-16",
+            "-17",
+            "5"
+          ],
+          "min": -345,
+          "max": 407,
+          "mean": -1.8252,
+          "std": 39.7906
+        },
+        "\u8ba2\u5355\u6e20\u9053_e\u5145\u7535ios_\u6570\u91cf_\u53d8\u5316\u7387": {
+          "dtype": "float64",
+          "unique_ratio": 0.472,
+          "sample": [
+            "466.6666666666667",
+            "-76.47058823529412",
+            "-100.0",
+            "-36.95652173913043",
+            "17.24137931034483"
+          ],
+          "min": -100.0,
+          "max": 3130.76923076923,
+          "mean": 27.5144,
+          "std": 221.7388
+        },
+        "\u8ba2\u5355\u6e20\u9053_e\u5145\u7535\u652f\u4ed8\u5b9d\u5c0f\u7a0b\u5e8f_\u6570\u91cf_\u5f53\u524d\u503c": {
+          "dtype": "int64",
+          "unique_ratio": 0.2028,
+          "sample": [
+            "0",
+            "8",
+            "0",
+            "0",
+            "0"
+          ],
+          "min": 0,
+          "max": 1346,
+          "mean": 25.5734,
+          "std": 117.0126
+        },
+        "\u8ba2\u5355\u6e20\u9053_e\u5145\u7535\u652f\u4ed8\u5b9d\u5c0f\u7a0b\u5e8f_\u6570\u91cf_\u5bf9\u6bd4\u503c": {
+          "dtype": "int64",
+          "unique_ratio": 0.1993,
+          "sample": [
+            "0",
+            "0",
+            "8",
+            "0",
+            "0"
+          ],
+          "min": 0,
+          "max": 947,
+          "mean": 21.0559,
+          "std": 80.0654
+        },
+        "\u8ba2\u5355\u6e20\u9053_e\u5145\u7535\u652f\u4ed8\u5b9d\u5c0f\u7a0b\u5e8f_\u6570\u91cf_\u53d8\u5316\u503c": {
+          "dtype": "int64",
+          "unique_ratio": 0.1888,
+          "sample": [
+            "0",
+            "8",
+            "-8",
+            "0",
+            "0"
+          ],
+          "min": -283,
+          "max": 534,
+          "mean": 4.5175,
+          "std": 58.1562
+        },
+        "\u8ba2\u5355\u6e20\u9053_e\u5145\u7535\u652f\u4ed8\u5b9d\u5c0f\u7a0b\u5e8f_\u6570\u91cf_\u53d8\u5316\u7387": {
+          "dtype": "float64",
+          "unique_ratio": 0.2343,
+          "sample": [
+            "0.0",
+            "100.0",
+            "-100.0",
+            "0.0",
+            "0.0"
+          ],
+          "min": -100.0,
+          "max": 4450.0,
+          "mean": 21.2557,
+          "std": 268.9465
+        },
+        "\u5c16\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u5f53\u524d\u503c": {
+          "dtype": "int64",
+          "unique_ratio": 0.0035,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "min": 0,
+          "max": 0,
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "\u5c16\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u5bf9\u6bd4\u503c": {
+          "dtype": "int64",
+          "unique_ratio": 0.0035,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "min": 0,
+          "max": 0,
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "\u5c16\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u53d8\u5316\u503c": {
+          "dtype": "int64",
+          "unique_ratio": 0.0035,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "min": 0,
+          "max": 0,
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "\u5c16\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u53d8\u5316\u7387": {
+          "dtype": "int64",
+          "unique_ratio": 0.0035,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "min": 0,
+          "max": 0,
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "\u5cf0\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u5f53\u524d\u503c": {
+          "dtype": "float64",
+          "unique_ratio": 0.9825,
+          "sample": [
+            "1015.6717",
+            "5006.8048",
+            "14.956",
+            "189.43",
+            "261.18"
+          ],
+          "min": 0.0,
+          "max": 41429.7854,
+          "mean": 2670.5004,
+          "std": 6694.1063
+        },
+        "\u5cf0\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u5bf9\u6bd4\u503c": {
+          "dtype": "float64",
+          "unique_ratio": 0.9825,
+          "sample": [
+            "70.1219",
+            "1015.6717",
+            "5006.8048",
+            "136.28",
+            "189.43"
+          ],
+          "min": 0.0,
+          "max": 41429.7854,
+          "mean": 2911.7328,
+          "std": 7082.7464
+        },
+        "\u5cf0\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u53d8\u5316\u503c": {
+          "dtype": "float64",
+          "unique_ratio": 1.0,
+          "sample": [
+            "945.5498",
+            "3991.1331",
+            "-4991.8488",
+            "53.15000000000001",
+            "71.75"
+          ],
+          "min": -30152.76,
+          "max": 29132.299,
+          "mean": -241.2324,
+          "std": 3965.9491
+        },
+        "\u5cf0\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u53d8\u5316\u7387": {
+          "dtype": "float64",
+          "unique_ratio": 0.979,
+          "sample": [
+            "1348.437221467188",
+            "392.9550365536423",
+            "-99.7012865370745",
+            "39.00058702670972",
+            "37.87678825951539"
+          ],
+          "min": -100.0,
+          "max": 11221.96721311475,
+          "mean": 114.625,
+          "std": 820.7773
+        },
+        "\u5e73\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u5f53\u524d\u503c": {
+          "dtype": "float64",
+          "unique_ratio": 0.9685,
+          "sample": [
+            "731.5457",
+            "4019.6239",
+            "7.67",
+            "504.71",
+            "527.51"
+          ],
+          "min": 0.0,
+          "max": 69272.374,
+          "mean": 3393.8717,
+          "std": 9360.4981
+        },
+        "\u5e73\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u5bf9\u6bd4\u503c": {
+          "dtype": "float64",
+          "unique_ratio": 0.9685,
+          "sample": [
+            "75.1408",
+            "731.5457",
+            "4019.6239",
+            "374.89",
+            "504.71"
+          ],
+          "min": 0.0,
+          "max": 73686.502,
+          "mean": 3492.0816,
+          "std": 9554.9263
+        },
+        "\u5e73\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u53d8\u5316\u503c": {
+          "dtype": "float64",
+          "unique_ratio": 0.9895,
+          "sample": [
+            "656.4049",
+            "3288.0782",
+            "-4011.9539",
+            "129.82",
+            "22.80000000000001"
+          ],
+          "min": -54450.269,
+          "max": 53694.7497,
+          "mean": -98.2099,
+          "std": 5558.3656
+        },
+        "\u5e73\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u53d8\u5316\u7387": {
+          "dtype": "float64",
+          "unique_ratio": 0.9545,
+          "sample": [
+            "873.5665577156485",
+            "449.4699647609165",
+            "-99.80918612808529",
+            "34.62882445517351",
+            "4.517445661865231"
+          ],
+          "min": -100.0,
+          "max": 28180.0,
+          "mean": 152.7213,
+          "std": 1721.6631
+        },
+        "\u8c37\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u5f53\u524d\u503c": {
+          "dtype": "float64",
+          "unique_ratio": 0.8357,
+          "sample": [
+            "8940.4952",
+            "18524.6658",
+            "0.0",
+            "1637.44",
+            "1885.29"
+          ],
+          "min": 0.0,
+          "max": 70462.4397,
+          "mean": 5244.4214,
+          "std": 14426.1619
+        },
+        "\u8c37\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u5bf9\u6bd4\u503c": {
+          "dtype": "float64",
+          "unique_ratio": 0.8357,
+          "sample": [
+            "70.81",
+            "8940.4952",
+            "18524.6658",
+            "2094.21",
+            "1637.44"
+          ],
+          "min": 0.0,
+          "max": 68961.4104,
+          "mean": 4999.1655,
+          "std": 13847.9539
+        },
+        "\u8c37\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u53d8\u5316\u503c": {
+          "dtype": "float64",
+          "unique_ratio": 0.8986,
+          "sample": [
+            "8869.6852",
+            "9584.1706",
+            "-18524.6658",
+            "-456.77",
+            "247.8499999999999"
+          ],
+          "min": -43234.121,
+          "max": 54102.6851,
+          "mean": 245.2559,
+          "std": 6462.0266
+        },
+        "\u8c37\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u53d8\u5316\u7387": {
+          "dtype": "float64",
+          "unique_ratio": 0.7832,
+          "sample": [
+            "12526.03474085581",
+            "107.1995497520093",
+            "-100.0",
+            "-21.81108866828064",
+            "15.13643247996873"
+          ],
+          "min": -100.0,
+          "max": 156644.4444444444,
+          "mean": 703.6136,
+          "std": 9333.1741
+        },
+        "\u6df1\u8c37\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u5f53\u524d\u503c": {
+          "dtype": "int64",
+          "unique_ratio": 0.0035,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "min": 0,
+          "max": 0,
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "\u6df1\u8c37\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u5bf9\u6bd4\u503c": {
+          "dtype": "int64",
+          "unique_ratio": 0.0035,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "min": 0,
+          "max": 0,
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "\u6df1\u8c37\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u53d8\u5316\u503c": {
+          "dtype": "int64",
+          "unique_ratio": 0.0035,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "min": 0,
+          "max": 0,
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "\u6df1\u8c37\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u53d8\u5316\u7387": {
+          "dtype": "int64",
+          "unique_ratio": 0.0035,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "min": 0,
+          "max": 0,
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "\u7ad9\u70b9\u7c7b\u578b": {
+          "dtype": "object",
+          "unique_ratio": 0.014,
+          "sample": [
+            "nan",
+            "nan",
+            "nan",
+            "\u5355\u4f4d\u5185\u90e8(\u4e13\u7528)",
+            "\u5355\u4f4d\u5185\u90e8(\u4e13\u7528)"
+          ]
+        },
+        "\u5efa\u8bbe\u573a\u6240": {
+          "dtype": "object",
+          "unique_ratio": 0.021,
+          "sample": [
+            "nan",
+            "nan",
+            "nan",
+            "\u4f01\u4e1a\u4e13\u7528",
+            "\u4f01\u4e1a\u4e13\u7528"
+          ]
+        },
+        "\u6240\u5c5e\u533a\u57df": {
+          "dtype": "object",
+          "unique_ratio": 0.0105,
+          "sample": [
+            "nan",
+            "nan",
+            "nan",
+            "\u57ce\u533a",
+            "\u57ce\u533a"
+          ]
+        },
+        "\u5bf9\u5916\u5f00\u653e": {
+          "dtype": "object",
+          "unique_ratio": 0.007,
+          "sample": [
+            "nan",
+            "nan",
+            "nan",
+            "\u5426",
+            "\u5426"
+          ]
+        },
+        "\u505c\u8f66\u8d39\u7c7b\u578b": {
+          "dtype": "object",
+          "unique_ratio": 0.0105,
+          "sample": [
+            "nan",
+            "nan",
+            "nan",
+            "\u6536\u8d39",
+            "\u6536\u8d39"
+          ]
+        },
+        "\u505c\u8f66\u8d39\u63cf\u8ff0": {
+          "dtype": "object",
+          "unique_ratio": 0.0315,
+          "sample": [
+            "nan",
+            "nan",
+            "nan",
+            "\u505c\u8f66\u8d39\u7528\uff0c\u6839\u636e\u573a\u7ad9\u5b9e\u9645\u60c5\u51b5\u6536\u53d6",
+            "\u505c\u8f66\u8d39\u7528\uff0c\u6839\u636e\u573a\u7ad9\u5b9e\u9645\u60c5\u51b5\u6536\u53d6"
+          ]
+        },
+        "\u6869\u6570\u91cf": {
+          "dtype": "object",
+          "unique_ratio": 0.0559,
+          "sample": [
+            "nan",
+            "nan",
+            "nan",
+            "\u76f4\u6d410 | \u4ea4\u6d414",
+            "\u76f4\u6d410 | \u4ea4\u6d414"
+          ]
+        },
+        "\u521b\u5efa\u65f6\u95f4": {
+          "dtype": "object",
+          "unique_ratio": 0.1888,
+          "sample": [
+            "nan",
+            "nan",
+            "nan",
+            "2023-09-15 17:04:38",
+            "2023-09-15 17:04:38"
+          ]
+        }
+      }
+    },
+    "rows": 286,
+    "cols": 56,
+    "columns": [
+      {
+        "name": "\u5145\u7535\u7ad9",
+        "type": "categorical",
+        "examples": [
+          "\u56db\u5ddd\u7701\u6210\u90fd\u5e02\u751f\u7269\u7814\u7a76\u6240\u5bbf\u820d\u505c\u8f66\u573a\u5145\u7535\u7ad9\uff08\u5185\u90e8\u4f7f\u7528\uff09",
+          "0"
+        ],
+        "unit": "none",
+        "min": "n/a",
+        "max": "n/a"
+      },
+      {
+        "name": "\u8fd0\u7ef4\u5355\u4f4d\u7f16\u7801",
+        "type": "categorical",
+        "examples": [
+          "3000020000000",
+          "0"
+        ],
+        "unit": "none",
+        "min": "n/a",
+        "max": "n/a"
+      },
+      {
+        "name": "\u5f53\u524d\u6708\u4efd",
+        "type": "numeric",
+        "examples": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "unit": "month",
+        "min": 2,
+        "max": 6
+      },
+      {
+        "name": "\u5bf9\u6bd4\u6708\u4efd",
+        "type": "numeric",
+        "examples": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "unit": "month",
+        "min": 1,
+        "max": 5
+      },
+      {
+        "name": "\u4ea4\u6613\u6d41\u6c34\u53f7_\u6570\u91cf_\u5f53\u524d\u503c",
+        "type": "numeric",
+        "examples": [
+          "284",
+          "696",
+          "2",
+          "109",
+          "125"
+        ],
+        "unit": "count",
+        "min": 1,
+        "max": 6807
+      },
+      {
+        "name": "\u4ea4\u6613\u6d41\u6c34\u53f7_\u6570\u91cf_\u5bf9\u6bd4\u503c",
+        "type": "numeric",
+        "examples": [
+          "59",
+          "284",
+          "696",
+          "125",
+          "109"
+        ],
+        "unit": "count",
+        "min": 1,
+        "max": 7426
+      },
+      {
+        "name": "\u4ea4\u6613\u6d41\u6c34\u53f7_\u6570\u91cf_\u53d8\u5316\u503c",
+        "type": "numeric",
+        "examples": [
+          "225",
+          "412",
+          "-694",
+          "-16",
+          "16"
+        ],
+        "unit": "count",
+        "min": -5343,
+        "max": 5556
+      },
+      {
+        "name": "\u4ea4\u6613\u6d41\u6c34\u53f7_\u6570\u91cf_\u53d8\u5316\u7387",
+        "type": "numeric",
+        "examples": [
+          "381.36",
+          "145.07",
+          "-99.71",
+          "-12.8",
+          "14.68"
+        ],
+        "unit": "%",
+        "min": -99.71,
+        "max": 6910.0
+      },
+      {
+        "name": "\u8ba2\u5355\u6e20\u9053_e \u5145\u7535\u5fae\u4fe1\u5c0f\u7a0b\u5e8f_\u6570\u91cf_\u5f53\u524d\u503c",
+        "type": "numeric",
+        "examples": [
+          "9",
+          "186",
+          "0"
+        ],
+        "unit": "count",
+        "min": 0,
+        "max": 3991
+      },
+      {
+        "name": "\u8ba2\u5355\u6e20\u9053_e \u5145\u7535\u5fae\u4fe1\u5c0f\u7a0b\u5e8f_\u6570\u91cf_\u53d8\u5316\u7387",
+        "type": "numeric",
+        "examples": [
+          "100.0",
+          "1966.67",
+          "-100.0"
+        ],
+        "unit": "%",
+        "min": -100.0,
+        "max": 5369.23
+      },
+      {
+        "name": "\u8ba2\u5355\u6e20\u9053_\u6b63\u5411\u4e92\u8054\u4e92\u901a_\u6570\u91cf_\u5f53\u524d\u503c",
+        "type": "numeric",
+        "examples": [
+          "0"
+        ],
+        "unit": "count",
+        "min": 0,
+        "max": 3057
+      },
+      {
+        "name": "\u8ba2\u5355\u6e20\u9053_e \u5145\u7535 Android_\u6570\u91cf_\u5f53\u524d\u503c",
+        "type": "numeric",
+        "examples": [
+          "57",
+          "117",
+          "2",
+          "71",
+          "79"
+        ],
+        "unit": "count",
+        "min": 0,
+        "max": 1092
+      },
+      {
+        "name": "\u8ba2\u5355\u6e20\u9053_e \u5145\u7535 ios_\u6570\u91cf_\u5f53\u524d\u503c",
+        "type": "numeric",
+        "examples": [
+          "68",
+          "16",
+          "0",
+          "29",
+          "34"
+        ],
+        "unit": "count",
+        "min": 0,
+        "max": 458
+      },
+      {
+        "name": "\u8ba2\u5355\u6e20\u9053_e \u5145\u7535\u652f\u4ed8\u5b9d\u5c0f\u7a0b\u5e8f_\u6570\u91cf_\u5f53\u524d\u503c",
+        "type": "numeric",
+        "examples": [
+          "0",
+          "8"
+        ],
+        "unit": "count",
+        "min": 0,
+        "max": 1346
+      },
+      {
+        "name": "\u5c16\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u5f53\u524d\u503c",
+        "type": "numeric",
+        "examples": [
+          "0"
+        ],
+        "unit": "kWh",
+        "min": 0,
+        "max": 0
+      },
+      {
+        "name": "\u5cf0\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u5f53\u524d\u503c",
+        "type": "numeric",
+        "examples": [
+          "1015.67",
+          "5006.80",
+          "14.96",
+          "189.43",
+          "261.18"
+        ],
+        "unit": "kWh",
+        "min": 0.0,
+        "max": 41429.79
+      },
+      {
+        "name": "\u5cf0\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u53d8\u5316\u503c",
+        "type": "numeric",
+        "examples": [
+          "945.55",
+          "3991.13",
+          "-4991.85",
+          "53.15",
+          "71.75"
+        ],
+        "unit": "kWh",
+        "min": -30152.76,
+        "max": 29132.3
+      },
+      {
+        "name": "\u5cf0\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u53d8\u5316\u7387",
+        "type": "numeric",
+        "examples": [
+          "1348.44",
+          "392.96",
+          "-99.70",
+          "39.00",
+          "37.88"
+        ],
+        "unit": "%",
+        "min": -100.0,
+        "max": 11221.97
+      },
+      {
+        "name": "\u5e73\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u5f53\u524d\u503c",
+        "type": "numeric",
+        "examples": [
+          "731.55",
+          "4019.62",
+          "7.67",
+          "504.71",
+          "527.51"
+        ],
+        "unit": "kWh",
+        "min": 0.0,
+        "max": 69272.37
+      },
+      {
+        "name": "\u5e73\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u53d8\u5316\u503c",
+        "type": "numeric",
+        "examples": [
+          "656.40",
+          "3288.08",
+          "-4011.95",
+          "129.82",
+          "22.80"
+        ],
+        "unit": "kWh",
+        "min": -54450.27,
+        "max": 53694.75
+      },
+      {
+        "name": "\u8c37\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u5f53\u524d\u503c",
+        "type": "numeric",
+        "examples": [
+          "8940.50",
+          "18524.67",
+          "0.0",
+          "1637.44",
+          "1885.29"
+        ],
+        "unit": "kWh",
+        "min": 0.0,
+        "max": 70462.44
+      },
+      {
+        "name": "\u8c37\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u53d8\u5316\u503c",
+        "type": "numeric",
+        "examples": [
+          "8869.69",
+          "9584.17",
+          "-18524.67",
+          "-456.77",
+          "247.85"
+        ],
+        "unit": "kWh",
+        "min": -43234.12,
+        "max": 54102.69
+      },
+      {
+        "name": "\u6df1\u8c37\u7535\u91cf\uff08kwh\uff09_\u603b\u548c_\u5f53\u524d\u503c",
+        "type": "numeric",
+        "examples": [
+          "0"
+        ],
+        "unit": "kWh",
+        "min": 0,
+        "max": 0
+      },
+      {
+        "name": "\u7ad9\u70b9\u7c7b\u578b",
+        "type": "categorical",
+        "examples": [
+          "\u5355\u4f4d\u5185\u90e8 (\u4e13\u7528)",
+          "nan"
+        ],
+        "unit": "none",
+        "min": "n/a",
+        "max": "n/a"
+      },
+      {
+        "name": "\u5efa\u8bbe\u573a\u6240",
+        "type": "categorical",
+        "examples": [
+          "\u4f01\u4e1a\u4e13\u7528",
+          "nan"
+        ],
+        "unit": "none",
+        "min": "n/a",
+        "max": "n/a"
+      },
+      {
+        "name": "\u6240\u5c5e\u533a\u57df",
+        "type": "categorical",
+        "examples": [
+          "\u57ce\u533a",
+          "nan"
+        ],
+        "unit": "none",
+        "min": "n/a",
+        "max": "n/a"
+      },
+      {
+        "name": "\u5bf9\u5916\u5f00\u653e",
+        "type": "categorical",
+        "examples": [
+          "\u5426",
+          "nan"
+        ],
+        "unit": "none",
+        "min": "n/a",
+        "max": "n/a"
+      },
+      {
+        "name": "\u505c\u8f66\u8d39\u7c7b\u578b",
+        "type": "categorical",
+        "examples": [
+          "\u6536\u8d39",
+          "nan"
+        ],
+        "unit": "none",
+        "min": "n/a",
+        "max": "n/a"
+      },
+      {
+        "name": "\u505c\u8f66\u8d39\u63cf\u8ff0",
+        "type": "text",
+        "examples": [
+          "\u505c\u8f66\u8d39\u7528\uff0c\u6839\u636e\u573a\u7ad9\u5b9e\u9645\u60c5\u51b5\u6536\u53d6",
+          "nan"
+        ],
+        "unit": "none",
+        "min": "n/a",
+        "max": "n/a"
+      },
+      {
+        "name": "\u6869\u6570\u91cf",
+        "type": "text",
+        "examples": [
+          "\u76f4\u6d41 0 | \u4ea4\u6d41 4",
+          "nan"
+        ],
+        "unit": "none",
+        "min": "n/a",
+        "max": "n/a"
+      },
+      {
+        "name": "\u521b\u5efa\u65f6\u95f4",
+        "type": "datetime",
+        "examples": [
+          "2023-09-15 17:04:38",
+          "nan"
+        ],
+        "unit": "none",
+        "min": "2023-09-15",
+        "max": "n/a"
+      }
+    ],
+    "formulas": [
+      "\u53d8\u5316\u503c = \u5f53\u524d\u503c - \u5bf9\u6bd4\u503c",
+      "\u53d8\u5316\u7387 = (\u53d8\u5316\u503c / \u5bf9\u6bd4\u503c) * 100"
+    ],
+    "hierarchy": "Data is organized by charging station (\u5145\u7535\u7ad9) with metrics grouped by: (1) Transaction quantities (\u4ea4\u6613\u6d41\u6c34\u53f7), (2) Order channels (\u8ba2\u5355\u6e20\u9053: WeChat, Android, iOS, Alipay, \u4e92\u8054\u4e92\u901a), (3) Electricity consumption by time-of-use pricing tiers (\u5c16/\u5cf0/\u5e73/\u8c37/\u6df1\u8c37\u7535\u91cf). Each metric group has four variants: current value, comparison value, change value, and change rate.",
+    "time_series": true,
+    "candidate_pk": [],
+    "possible_fk": [
+      "\u8fd0\u7ef4\u5355\u4f4d\u7f16\u7801"
+    ],
+    "subtotal_cols": [],
+    "subtotal_rows": false
+  },
+  "memory": "[]",
+  "iteration": 0,
+  "max_cycles": 5,
+  "domain_fixed": false,
+  "previous_scores": {},
+  "history": [
+    {
+      "iteration": 0,
+      "domain": "Unknown",
+      "scores": {},
+      "analysis_head": ""
+    },
+    {
+      "iteration": 0,
+      "domain": "Charging station",
+      "scores": {
+        "correctness": 0,
+        "relevance": 0,
+        "coverage": 0,
+        "insightfulness": 0,
+        "novelty": 0,
+        "depth": 0
+      },
+      "analysis_head": "Applying **Variance Analysis** to the **Value Chain**, the dataset reveals unstable demand with transaction standard dev"
+    }
+  ],
+  "domain_info": {
+    "domain": "Charging station",
+    "definition": "A charging station (also called a charge point or electric vehicle supply equipment) is infrastructure that supplies electric power for charging plug-in electric vehicles, including metrics for transactions, order channels, and time-of-use electricity consumption.",
+    "wiki_url": "https://en.wikipedia.org/wiki/Charging_station"
+  },
+  "concepts": [
+    "Transaction Volume",
+    "Order Channel Distribution",
+    "Time-of-Use Electricity Usage",
+    "Station Infrastructure Attributes",
+    "Operation Unit Performance",
+    "Monthly Performance Trend"
+  ],
+  "analysis": {
+    "domain": "Electric Vehicle Charging Infrastructure",
+    "core_concepts": [
+      "Transaction Volatility",
+      "Channel Mix Efficiency",
+      "Time-of-Use Optimization",
+      "Operational Variance"
+    ],
+    "analysis": {
+      "descriptive": "Applying **Variance Analysis** to the **Value Chain**, the dataset reveals unstable demand with transaction standard deviations exceeding means (std ~1015 vs mean ~430). Channel distribution is fragmented but skewed, with WeChat Mini Programs (mean 188) significantly outperforming native Apps (Android mean 68, iOS mean 24). Energy consumption metrics indicate a heavy reliance on Valley (\u8c37) and Flat (\u5e73) pricing tiers, while Sharp (\u5c16) and Deep Valley (\u6df1\u8c37) tiers show zero utilization, highlighting specific infrastructure or pricing constraints.",
+      "predictive": "Through **Trend Analysis**, the high standard deviation in change rates (up to 1721% for Flat electricity) signals low forecast reliability and high revenue risk. The negative mean change in transaction volume (-16.24) contrasted with positive Valley energy changes (+245.26) suggests a behavioral shift: fewer transactions but higher energy consumption per session. This indicates potential seasonality or **PESTEL** environmental factors influencing utilization rates during the Feb-Jun period.",
+      "domain_related": "From a **SWOT** perspective, diverse channel access is a Strength, but infrastructure underutilization (zero usage in specific TOU tiers) is a Weakness. **Operational Excellence** requires benchmarking high-performing stations to address the high variance in operation unit performance. Strategic **Efficiency** gains lie in optimizing Time-of-Use pricing to incentivize off-peak usage further and consolidating channel focus towards high-conversion platforms like WeChat."
+    }
+  },
+  "evaluation": "No dataset, domain label, concepts, or analysis content was provided in the input to evaluate. Scores are defaulted to zero due to missing information.",
+  "scores": {
+    "correctness": 0,
+    "relevance": 0,
+    "coverage": 0,
+    "insightfulness": 0,
+    "novelty": 0,
+    "depth": 0
+  },
+  "domain_ok": false,
+  "concepts_ok": false
+}

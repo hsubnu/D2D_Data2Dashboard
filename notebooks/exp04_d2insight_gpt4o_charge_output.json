@@ -1,0 +1,1614 @@
+{
+  "profile": {
+    "raw": {
+      "n_rows": 286,
+      "n_cols": 56,
+      "columns": {
+        "充电站": {
+          "dtype": "object",
+          "unique_ratio": 0.2483,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "   四川省成都市生物研究所宿舍停车场充电站（内部使用）",
+            "   四川省成都市生物研究所宿舍停车场充电站（内部使用）"
+          ]
+        },
+        "运维单位编码": {
+          "dtype": "int64",
+          "unique_ratio": 0.0105,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "3000020000000",
+            "3000020000000"
+          ],
+          "min": 0,
+          "max": 3000020000000,
+          "mean": 2821843986944.056,
+          "std": 710005211067.1898
+        },
+        "当前月份": {
+          "dtype": "int64",
+          "unique_ratio": 0.0175,
+          "sample": [
+            "2",
+            "3",
+            "4",
+            "2",
+            "3"
+          ],
+          "min": 2,
+          "max": 6,
+          "mean": 4.0175,
+          "std": 1.4178
+        },
+        "对比月份": {
+          "dtype": "int64",
+          "unique_ratio": 0.0175,
+          "sample": [
+            "1",
+            "2",
+            "3",
+            "1",
+            "2"
+          ],
+          "min": 1,
+          "max": 5,
+          "mean": 3.0175,
+          "std": 1.4178
+        },
+        "交易流水号_数量_当前值": {
+          "dtype": "int64",
+          "unique_ratio": 0.5944,
+          "sample": [
+            "284",
+            "696",
+            "2",
+            "109",
+            "125"
+          ],
+          "min": 1,
+          "max": 6807,
+          "mean": 430.3986,
+          "std": 1015.0661
+        },
+        "交易流水号_数量_对比值": {
+          "dtype": "int64",
+          "unique_ratio": 0.5804,
+          "sample": [
+            "59",
+            "284",
+            "696",
+            "125",
+            "109"
+          ],
+          "min": 1,
+          "max": 7426,
+          "mean": 446.6434,
+          "std": 1037.7278
+        },
+        "交易流水号_数量_变化值": {
+          "dtype": "int64",
+          "unique_ratio": 0.4476,
+          "sample": [
+            "225",
+            "412",
+            "-694",
+            "-16",
+            "16"
+          ],
+          "min": -5343,
+          "max": 5556,
+          "mean": -16.2448,
+          "std": 597.9086
+        },
+        "交易流水号_数量_变化率": {
+          "dtype": "float64",
+          "unique_ratio": 0.8392,
+          "sample": [
+            "381.3559322033898",
+            "145.0704225352113",
+            "-99.71264367816092",
+            "-12.8",
+            "14.67889908256881"
+          ],
+          "min": -99.71264367816092,
+          "max": 6909.999999999999,
+          "mean": 77.9646,
+          "std": 630.4641
+        },
+        "订单渠道_e充电微信小程序_数量_当前值": {
+          "dtype": "int64",
+          "unique_ratio": 0.3007,
+          "sample": [
+            "9",
+            "186",
+            "0",
+            "9",
+            "8"
+          ],
+          "min": 0,
+          "max": 3991,
+          "mean": 188.5839,
+          "std": 534.4556
+        },
+        "订单渠道_e充电微信小程序_数量_对比值": {
+          "dtype": "int64",
+          "unique_ratio": 0.3042,
+          "sample": [
+            "0",
+            "9",
+            "186",
+            "15",
+            "9"
+          ],
+          "min": 0,
+          "max": 3991,
+          "mean": 184.9755,
+          "std": 504.417
+        },
+        "订单渠道_e充电微信小程序_数量_变化值": {
+          "dtype": "int64",
+          "unique_ratio": 0.2937,
+          "sample": [
+            "9",
+            "177",
+            "-186",
+            "-6",
+            "-1"
+          ],
+          "min": -1440,
+          "max": 3346,
+          "mean": 3.6084,
+          "std": 311.0987
+        },
+        "订单渠道_e充电微信小程序_数量_变化率": {
+          "dtype": "float64",
+          "unique_ratio": 0.3811,
+          "sample": [
+            "100.0",
+            "1966.666666666667",
+            "-100.0",
+            "-40.0",
+            "-11.11111111111111"
+          ],
+          "min": -100.0,
+          "max": 5369.23076923077,
+          "mean": 61.2117,
+          "std": 452.7966
+        },
+        "订单渠道_正向互联互通_数量_当前值": {
+          "dtype": "int64",
+          "unique_ratio": 0.1748,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "min": 0,
+          "max": 3057,
+          "mean": 33.7902,
+          "std": 222.9133
+        },
+        "订单渠道_正向互联互通_数量_对比值": {
+          "dtype": "int64",
+          "unique_ratio": 0.1748,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "min": 0,
+          "max": 3338,
+          "mean": 51.5524,
+          "std": 320.0237
+        },
+        "订单渠道_正向互联互通_数量_变化值": {
+          "dtype": "int64",
+          "unique_ratio": 0.1678,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "min": -2435,
+          "max": 125,
+          "mean": -17.7622,
+          "std": 164.6356
+        },
+        "订单渠道_正向互联互通_数量_变化率": {
+          "dtype": "float64",
+          "unique_ratio": 0.2098,
+          "sample": [
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0"
+          ],
+          "min": -100.0,
+          "max": 5300.0,
+          "mean": 28.4514,
+          "std": 339.4556
+        },
+        "订单渠道_e充电Android_数量_当前值": {
+          "dtype": "int64",
+          "unique_ratio": 0.3881,
+          "sample": [
+            "57",
+            "117",
+            "2",
+            "71",
+            "79"
+          ],
+          "min": 0,
+          "max": 1092,
+          "mean": 68.9056,
+          "std": 147.8169
+        },
+        "订单渠道_e充电Android_数量_对比值": {
+          "dtype": "int64",
+          "unique_ratio": 0.4056,
+          "sample": [
+            "47",
+            "57",
+            "117",
+            "61",
+            "71"
+          ],
+          "min": 0,
+          "max": 1037,
+          "mean": 72.4371,
+          "std": 148.128
+        },
+        "订单渠道_e充电Android_数量_变化值": {
+          "dtype": "int64",
+          "unique_ratio": 0.3077,
+          "sample": [
+            "10",
+            "60",
+            "-115",
+            "10",
+            "8"
+          ],
+          "min": -691,
+          "max": 863,
+          "mean": -3.5315,
+          "std": 85.4947
+        },
+        "订单渠道_e充电Android_数量_变化率": {
+          "dtype": "float64",
+          "unique_ratio": 0.6538,
+          "sample": [
+            "21.27659574468085",
+            "105.2631578947368",
+            "-98.29059829059828",
+            "16.39344262295082",
+            "11.26760563380282"
+          ],
+          "min": -100.0,
+          "max": 3752.173913043478,
+          "mean": 23.0922,
+          "std": 244.7644
+        },
+        "订单渠道_e充电ios_数量_当前值": {
+          "dtype": "int64",
+          "unique_ratio": 0.2587,
+          "sample": [
+            "68",
+            "16",
+            "0",
+            "29",
+            "34"
+          ],
+          "min": 0,
+          "max": 458,
+          "mean": 24.7587,
+          "std": 61.4722
+        },
+        "订单渠道_e充电ios_数量_对比值": {
+          "dtype": "int64",
+          "unique_ratio": 0.2692,
+          "sample": [
+            "12",
+            "68",
+            "16",
+            "46",
+            "29"
+          ],
+          "min": 0,
+          "max": 508,
+          "mean": 26.5839,
+          "std": 62.6331
+        },
+        "订单渠道_e充电ios_数量_变化值": {
+          "dtype": "int64",
+          "unique_ratio": 0.2343,
+          "sample": [
+            "56",
+            "-52",
+            "-16",
+            "-17",
+            "5"
+          ],
+          "min": -345,
+          "max": 407,
+          "mean": -1.8252,
+          "std": 39.7906
+        },
+        "订单渠道_e充电ios_数量_变化率": {
+          "dtype": "float64",
+          "unique_ratio": 0.472,
+          "sample": [
+            "466.6666666666667",
+            "-76.47058823529412",
+            "-100.0",
+            "-36.95652173913043",
+            "17.24137931034483"
+          ],
+          "min": -100.0,
+          "max": 3130.76923076923,
+          "mean": 27.5144,
+          "std": 221.7388
+        },
+        "订单渠道_e充电支付宝小程序_数量_当前值": {
+          "dtype": "int64",
+          "unique_ratio": 0.2028,
+          "sample": [
+            "0",
+            "8",
+            "0",
+            "0",
+            "0"
+          ],
+          "min": 0,
+          "max": 1346,
+          "mean": 25.5734,
+          "std": 117.0126
+        },
+        "订单渠道_e充电支付宝小程序_数量_对比值": {
+          "dtype": "int64",
+          "unique_ratio": 0.1993,
+          "sample": [
+            "0",
+            "0",
+            "8",
+            "0",
+            "0"
+          ],
+          "min": 0,
+          "max": 947,
+          "mean": 21.0559,
+          "std": 80.0654
+        },
+        "订单渠道_e充电支付宝小程序_数量_变化值": {
+          "dtype": "int64",
+          "unique_ratio": 0.1888,
+          "sample": [
+            "0",
+            "8",
+            "-8",
+            "0",
+            "0"
+          ],
+          "min": -283,
+          "max": 534,
+          "mean": 4.5175,
+          "std": 58.1562
+        },
+        "订单渠道_e充电支付宝小程序_数量_变化率": {
+          "dtype": "float64",
+          "unique_ratio": 0.2343,
+          "sample": [
+            "0.0",
+            "100.0",
+            "-100.0",
+            "0.0",
+            "0.0"
+          ],
+          "min": -100.0,
+          "max": 4450.0,
+          "mean": 21.2557,
+          "std": 268.9465
+        },
+        "尖电量（kwh）_总和_当前值": {
+          "dtype": "int64",
+          "unique_ratio": 0.0035,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "min": 0,
+          "max": 0,
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "尖电量（kwh）_总和_对比值": {
+          "dtype": "int64",
+          "unique_ratio": 0.0035,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "min": 0,
+          "max": 0,
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "尖电量（kwh）_总和_变化值": {
+          "dtype": "int64",
+          "unique_ratio": 0.0035,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "min": 0,
+          "max": 0,
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "尖电量（kwh）_总和_变化率": {
+          "dtype": "int64",
+          "unique_ratio": 0.0035,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "min": 0,
+          "max": 0,
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "峰电量（kwh）_总和_当前值": {
+          "dtype": "float64",
+          "unique_ratio": 0.9825,
+          "sample": [
+            "1015.6717",
+            "5006.8048",
+            "14.956",
+            "189.43",
+            "261.18"
+          ],
+          "min": 0.0,
+          "max": 41429.7854,
+          "mean": 2670.5004,
+          "std": 6694.1063
+        },
+        "峰电量（kwh）_总和_对比值": {
+          "dtype": "float64",
+          "unique_ratio": 0.9825,
+          "sample": [
+            "70.1219",
+            "1015.6717",
+            "5006.8048",
+            "136.28",
+            "189.43"
+          ],
+          "min": 0.0,
+          "max": 41429.7854,
+          "mean": 2911.7328,
+          "std": 7082.7464
+        },
+        "峰电量（kwh）_总和_变化值": {
+          "dtype": "float64",
+          "unique_ratio": 1.0,
+          "sample": [
+            "945.5498",
+            "3991.1331",
+            "-4991.8488",
+            "53.15000000000001",
+            "71.75"
+          ],
+          "min": -30152.76,
+          "max": 29132.299,
+          "mean": -241.2324,
+          "std": 3965.9491
+        },
+        "峰电量（kwh）_总和_变化率": {
+          "dtype": "float64",
+          "unique_ratio": 0.979,
+          "sample": [
+            "1348.437221467188",
+            "392.9550365536423",
+            "-99.7012865370745",
+            "39.00058702670972",
+            "37.87678825951539"
+          ],
+          "min": -100.0,
+          "max": 11221.96721311475,
+          "mean": 114.625,
+          "std": 820.7773
+        },
+        "平电量（kwh）_总和_当前值": {
+          "dtype": "float64",
+          "unique_ratio": 0.9685,
+          "sample": [
+            "731.5457",
+            "4019.6239",
+            "7.67",
+            "504.71",
+            "527.51"
+          ],
+          "min": 0.0,
+          "max": 69272.374,
+          "mean": 3393.8717,
+          "std": 9360.4981
+        },
+        "平电量（kwh）_总和_对比值": {
+          "dtype": "float64",
+          "unique_ratio": 0.9685,
+          "sample": [
+            "75.1408",
+            "731.5457",
+            "4019.6239",
+            "374.89",
+            "504.71"
+          ],
+          "min": 0.0,
+          "max": 73686.502,
+          "mean": 3492.0816,
+          "std": 9554.9263
+        },
+        "平电量（kwh）_总和_变化值": {
+          "dtype": "float64",
+          "unique_ratio": 0.9895,
+          "sample": [
+            "656.4049",
+            "3288.0782",
+            "-4011.9539",
+            "129.82",
+            "22.80000000000001"
+          ],
+          "min": -54450.269,
+          "max": 53694.7497,
+          "mean": -98.2099,
+          "std": 5558.3656
+        },
+        "平电量（kwh）_总和_变化率": {
+          "dtype": "float64",
+          "unique_ratio": 0.9545,
+          "sample": [
+            "873.5665577156485",
+            "449.4699647609165",
+            "-99.80918612808529",
+            "34.62882445517351",
+            "4.517445661865231"
+          ],
+          "min": -100.0,
+          "max": 28180.0,
+          "mean": 152.7213,
+          "std": 1721.6631
+        },
+        "谷电量（kwh）_总和_当前值": {
+          "dtype": "float64",
+          "unique_ratio": 0.8357,
+          "sample": [
+            "8940.4952",
+            "18524.6658",
+            "0.0",
+            "1637.44",
+            "1885.29"
+          ],
+          "min": 0.0,
+          "max": 70462.4397,
+          "mean": 5244.4214,
+          "std": 14426.1619
+        },
+        "谷电量（kwh）_总和_对比值": {
+          "dtype": "float64",
+          "unique_ratio": 0.8357,
+          "sample": [
+            "70.81",
+            "8940.4952",
+            "18524.6658",
+            "2094.21",
+            "1637.44"
+          ],
+          "min": 0.0,
+          "max": 68961.4104,
+          "mean": 4999.1655,
+          "std": 13847.9539
+        },
+        "谷电量（kwh）_总和_变化值": {
+          "dtype": "float64",
+          "unique_ratio": 0.8986,
+          "sample": [
+            "8869.6852",
+            "9584.1706",
+            "-18524.6658",
+            "-456.77",
+            "247.8499999999999"
+          ],
+          "min": -43234.121,
+          "max": 54102.6851,
+          "mean": 245.2559,
+          "std": 6462.0266
+        },
+        "谷电量（kwh）_总和_变化率": {
+          "dtype": "float64",
+          "unique_ratio": 0.7832,
+          "sample": [
+            "12526.03474085581",
+            "107.1995497520093",
+            "-100.0",
+            "-21.81108866828064",
+            "15.13643247996873"
+          ],
+          "min": -100.0,
+          "max": 156644.4444444444,
+          "mean": 703.6136,
+          "std": 9333.1741
+        },
+        "深谷电量（kwh）_总和_当前值": {
+          "dtype": "int64",
+          "unique_ratio": 0.0035,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "min": 0,
+          "max": 0,
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "深谷电量（kwh）_总和_对比值": {
+          "dtype": "int64",
+          "unique_ratio": 0.0035,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "min": 0,
+          "max": 0,
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "深谷电量（kwh）_总和_变化值": {
+          "dtype": "int64",
+          "unique_ratio": 0.0035,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "min": 0,
+          "max": 0,
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "深谷电量（kwh）_总和_变化率": {
+          "dtype": "int64",
+          "unique_ratio": 0.0035,
+          "sample": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "min": 0,
+          "max": 0,
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "站点类型": {
+          "dtype": "object",
+          "unique_ratio": 0.014,
+          "sample": [
+            "nan",
+            "nan",
+            "nan",
+            "单位内部(专用)",
+            "单位内部(专用)"
+          ]
+        },
+        "建设场所": {
+          "dtype": "object",
+          "unique_ratio": 0.021,
+          "sample": [
+            "nan",
+            "nan",
+            "nan",
+            "企业专用",
+            "企业专用"
+          ]
+        },
+        "所属区域": {
+          "dtype": "object",
+          "unique_ratio": 0.0105,
+          "sample": [
+            "nan",
+            "nan",
+            "nan",
+            "城区",
+            "城区"
+          ]
+        },
+        "对外开放": {
+          "dtype": "object",
+          "unique_ratio": 0.007,
+          "sample": [
+            "nan",
+            "nan",
+            "nan",
+            "否",
+            "否"
+          ]
+        },
+        "停车费类型": {
+          "dtype": "object",
+          "unique_ratio": 0.0105,
+          "sample": [
+            "nan",
+            "nan",
+            "nan",
+            "收费",
+            "收费"
+          ]
+        },
+        "停车费描述": {
+          "dtype": "object",
+          "unique_ratio": 0.0315,
+          "sample": [
+            "nan",
+            "nan",
+            "nan",
+            "停车费用，根据场站实际情况收取",
+            "停车费用，根据场站实际情况收取"
+          ]
+        },
+        "桩数量": {
+          "dtype": "object",
+          "unique_ratio": 0.0559,
+          "sample": [
+            "nan",
+            "nan",
+            "nan",
+            "直流0 | 交流4",
+            "直流0 | 交流4"
+          ]
+        },
+        "创建时间": {
+          "dtype": "object",
+          "unique_ratio": 0.1888,
+          "sample": [
+            "nan",
+            "nan",
+            "nan",
+            "2023-09-15 17:04:38",
+            "2023-09-15 17:04:38"
+          ]
+        }
+      }
+    },
+    "rows": 286,
+    "cols": 56,
+    "columns": [
+      {
+        "name": "充电站",
+        "type": "text",
+        "examples": [
+          "0",
+          "   四川省成都市生物研究所宿舍停车场充电站（内部使用）"
+        ],
+        "unit": "none",
+        "min": "n/a",
+        "max": "n/a"
+      },
+      {
+        "name": "运维单位编码",
+        "type": "categorical",
+        "examples": [
+          "0",
+          "3000020000000"
+        ],
+        "unit": "none",
+        "min": "n/a",
+        "max": "n/a"
+      },
+      {
+        "name": "当前月份",
+        "type": "numeric",
+        "examples": [
+          "2",
+          "3",
+          "4"
+        ],
+        "unit": "none",
+        "min": 2,
+        "max": 6
+      },
+      {
+        "name": "对比月份",
+        "type": "numeric",
+        "examples": [
+          "1",
+          "2",
+          "3"
+        ],
+        "unit": "none",
+        "min": 1,
+        "max": 5
+      },
+      {
+        "name": "交易流水号_数量_当前值",
+        "type": "numeric",
+        "examples": [
+          "284",
+          "696",
+          "2"
+        ],
+        "unit": "none",
+        "min": 1,
+        "max": 6807
+      },
+      {
+        "name": "交易流水号_数量_对比值",
+        "type": "numeric",
+        "examples": [
+          "59",
+          "284",
+          "696"
+        ],
+        "unit": "none",
+        "min": 1,
+        "max": 7426
+      },
+      {
+        "name": "交易流水号_数量_变化值",
+        "type": "numeric",
+        "examples": [
+          "225",
+          "412",
+          "-694"
+        ],
+        "unit": "none",
+        "min": -5343,
+        "max": 5556
+      },
+      {
+        "name": "交易流水号_数量_变化率",
+        "type": "numeric",
+        "examples": [
+          "381.3559322033898",
+          "-99.71264367816092",
+          "14.67889908256881"
+        ],
+        "unit": "%",
+        "min": -99.71264367816092,
+        "max": 6909.999999999999
+      },
+      {
+        "name": "订单渠道_e充电微信小程序_数量_当前值",
+        "type": "numeric",
+        "examples": [
+          "9",
+          "186",
+          "0"
+        ],
+        "unit": "none",
+        "min": 0,
+        "max": 3991
+      },
+      {
+        "name": "订单渠道_e充电微信小程序_数量_对比值",
+        "type": "numeric",
+        "examples": [
+          "0",
+          "9",
+          "186"
+        ],
+        "unit": "none",
+        "min": 0,
+        "max": 3991
+      },
+      {
+        "name": "订单渠道_e充电微信小程序_数量_变化值",
+        "type": "numeric",
+        "examples": [
+          "9",
+          "177",
+          "-186"
+        ],
+        "unit": "none",
+        "min": -1440,
+        "max": 3346
+      },
+      {
+        "name": "订单渠道_e充电微信小程序_数量_变化率",
+        "type": "numeric",
+        "examples": [
+          "100.0",
+          "1966.666666666667",
+          "-100.0"
+        ],
+        "unit": "%",
+        "min": -100.0,
+        "max": 5369.23076923077
+      },
+      {
+        "name": "订单渠道_正向互联互通_数量_当前值",
+        "type": "numeric",
+        "examples": [
+          "0",
+          "0",
+          "0"
+        ],
+        "unit": "none",
+        "min": 0,
+        "max": 3057
+      },
+      {
+        "name": "订单渠道_正向互联互通_数量_对比值",
+        "type": "numeric",
+        "examples": [
+          "0",
+          "0",
+          "0"
+        ],
+        "unit": "none",
+        "min": 0,
+        "max": 3338
+      },
+      {
+        "name": "订单渠道_正向互联互通_数量_变化值",
+        "type": "numeric",
+        "examples": [
+          "0",
+          "0",
+          "0"
+        ],
+        "unit": "none",
+        "min": -2435,
+        "max": 125
+      },
+      {
+        "name": "订单渠道_正向互联互通_数量_变化率",
+        "type": "numeric",
+        "examples": [
+          "0.0",
+          "0.0",
+          "0.0"
+        ],
+        "unit": "%",
+        "min": -100.0,
+        "max": 5300.0
+      },
+      {
+        "name": "订单渠道_e充电Android_数量_当前值",
+        "type": "numeric",
+        "examples": [
+          "57",
+          "117",
+          "2"
+        ],
+        "unit": "none",
+        "min": 0,
+        "max": 1092
+      },
+      {
+        "name": "订单渠道_e充电Android_数量_对比值",
+        "type": "numeric",
+        "examples": [
+          "47",
+          "57",
+          "117"
+        ],
+        "unit": "none",
+        "min": 0,
+        "max": 1037
+      },
+      {
+        "name": "订单渠道_e充电Android_数量_变化值",
+        "type": "numeric",
+        "examples": [
+          "10",
+          "60",
+          "-115"
+        ],
+        "unit": "none",
+        "min": -691,
+        "max": 863
+      },
+      {
+        "name": "订单渠道_e充电Android_数量_变化率",
+        "type": "numeric",
+        "examples": [
+          "21.27659574468085",
+          "105.2631578947368",
+          "-98.29059829059828"
+        ],
+        "unit": "%",
+        "min": -100.0,
+        "max": 3752.173913043478
+      },
+      {
+        "name": "订单渠道_e充电ios_数量_当前值",
+        "type": "numeric",
+        "examples": [
+          "68",
+          "16",
+          "0"
+        ],
+        "unit": "none",
+        "min": 0,
+        "max": 458
+      },
+      {
+        "name": "订单渠道_e充电ios_数量_对比值",
+        "type": "numeric",
+        "examples": [
+          "12",
+          "68",
+          "16"
+        ],
+        "unit": "none",
+        "min": 0,
+        "max": 508
+      },
+      {
+        "name": "订单渠道_e充电ios_数量_变化值",
+        "type": "numeric",
+        "examples": [
+          "56",
+          "-52",
+          "-16"
+        ],
+        "unit": "none",
+        "min": -345,
+        "max": 407
+      },
+      {
+        "name": "订单渠道_e充电ios_数量_变化率",
+        "type": "numeric",
+        "examples": [
+          "466.6666666666667",
+          "-76.47058823529412",
+          "-100.0"
+        ],
+        "unit": "%",
+        "min": -100.0,
+        "max": 3130.76923076923
+      },
+      {
+        "name": "订单渠道_e充电支付宝小程序_数量_当前值",
+        "type": "numeric",
+        "examples": [
+          "0",
+          "8",
+          "0"
+        ],
+        "unit": "none",
+        "min": 0,
+        "max": 1346
+      },
+      {
+        "name": "订单渠道_e充电支付宝小程序_数量_对比值",
+        "type": "numeric",
+        "examples": [
+          "0",
+          "0",
+          "8"
+        ],
+        "unit": "none",
+        "min": 0,
+        "max": 947
+      },
+      {
+        "name": "订单渠道_e充电支付宝小程序_数量_变化值",
+        "type": "numeric",
+        "examples": [
+          "0",
+          "8",
+          "-8"
+        ],
+        "unit": "none",
+        "min": -283,
+        "max": 534
+      },
+      {
+        "name": "订单渠道_e充电支付宝小程序_数量_变化率",
+        "type": "numeric",
+        "examples": [
+          "0.0",
+          "100.0",
+          "-100.0"
+        ],
+        "unit": "%",
+        "min": -100.0,
+        "max": 4450.0
+      },
+      {
+        "name": "尖电量（kwh）_总和_当前值",
+        "type": "numeric",
+        "examples": [
+          "0",
+          "0",
+          "0"
+        ],
+        "unit": "kWh",
+        "min": 0,
+        "max": 0
+      },
+      {
+        "name": "尖电量（kwh）_总和_对比值",
+        "type": "numeric",
+        "examples": [
+          "0",
+          "0",
+          "0"
+        ],
+        "unit": "kWh",
+        "min": 0,
+        "max": 0
+      },
+      {
+        "name": "尖电量（kwh）_总和_变化值",
+        "type": "numeric",
+        "examples": [
+          "0",
+          "0",
+          "0"
+        ],
+        "unit": "kWh",
+        "min": 0,
+        "max": 0
+      },
+      {
+        "name": "尖电量（kwh）_总和_变化率",
+        "type": "numeric",
+        "examples": [
+          "0",
+          "0",
+          "0"
+        ],
+        "unit": "%",
+        "min": 0,
+        "max": 0
+      },
+      {
+        "name": "峰电量（kwh）_总和_当前值",
+        "type": "numeric",
+        "examples": [
+          "1015.6717",
+          "5006.8048",
+          "14.956"
+        ],
+        "unit": "kWh",
+        "min": 0.0,
+        "max": 41429.7854
+      },
+      {
+        "name": "峰电量（kwh）_总和_对比值",
+        "type": "numeric",
+        "examples": [
+          "70.1219",
+          "1015.6717",
+          "5006.8048"
+        ],
+        "unit": "kWh",
+        "min": 0.0,
+        "max": 41429.7854
+      },
+      {
+        "name": "峰电量（kwh）_总和_变化值",
+        "type": "numeric",
+        "examples": [
+          "945.5498",
+          "3991.1331",
+          "-4991.8488"
+        ],
+        "unit": "kWh",
+        "min": -30152.76,
+        "max": 29132.299
+      },
+      {
+        "name": "峰电量（kwh）_总和_变化率",
+        "type": "numeric",
+        "examples": [
+          "1348.437221467188",
+          "392.9550365536423",
+          "-99.7012865370745"
+        ],
+        "unit": "%",
+        "min": -100.0,
+        "max": 11221.96721311475
+      },
+      {
+        "name": "平电量（kwh）_总和_当前值",
+        "type": "numeric",
+        "examples": [
+          "731.5457",
+          "4019.6239",
+          "7.67"
+        ],
+        "unit": "kWh",
+        "min": 0.0,
+        "max": 69272.374
+      },
+      {
+        "name": "平电量（kwh）_总和_对比值",
+        "type": "numeric",
+        "examples": [
+          "75.1408",
+          "731.5457",
+          "4019.6239"
+        ],
+        "unit": "kWh",
+        "min": 0.0,
+        "max": 73686.502
+      },
+      {
+        "name": "平电量（kwh）_总和_变化值",
+        "type": "numeric",
+        "examples": [
+          "656.4049",
+          "3288.0782",
+          "-4011.9539"
+        ],
+        "unit": "kWh",
+        "min": -54450.269,
+        "max": 53694.7497
+      },
+      {
+        "name": "平电量（kwh）_总和_变化率",
+        "type": "numeric",
+        "examples": [
+          "873.5665577156485",
+          "449.4699647609165",
+          "-99.80918612808529"
+        ],
+        "unit": "%",
+        "min": -100.0,
+        "max": 28180.0
+      },
+      {
+        "name": "谷电量（kwh）_总和_当前值",
+        "type": "numeric",
+        "examples": [
+          "8940.4952",
+          "18524.6658",
+          "0.0"
+        ],
+        "unit": "kWh",
+        "min": 0.0,
+        "max": 70462.4397
+      },
+      {
+        "name": "谷电量（kwh）_总和_对比值",
+        "type": "numeric",
+        "examples": [
+          "70.81",
+          "8940.4952",
+          "18524.6658"
+        ],
+        "unit": "kWh",
+        "min": 0.0,
+        "max": 68961.4104
+      },
+      {
+        "name": "谷电量（kwh）_总和_变化值",
+        "type": "numeric",
+        "examples": [
+          "8869.6852",
+          "9584.1706",
+          "-18524.6658"
+        ],
+        "unit": "kWh",
+        "min": -43234.121,
+        "max": 54102.6851
+      },
+      {
+        "name": "谷电量（kwh）_总和_变化率",
+        "type": "numeric",
+        "examples": [
+          "12526.03474085581",
+          "107.1995497520093",
+          "-100.0"
+        ],
+        "unit": "%",
+        "min": -100.0,
+        "max": 156644.4444444444
+      },
+      {
+        "name": "深谷电量（kwh）_总和_当前值",
+        "type": "numeric",
+        "examples": [
+          "0",
+          "0",
+          "0"
+        ],
+        "unit": "kWh",
+        "min": 0,
+        "max": 0
+      },
+      {
+        "name": "深谷电量（kwh）_总和_对比值",
+        "type": "numeric",
+        "examples": [
+          "0",
+          "0",
+          "0"
+        ],
+        "unit": "kWh",
+        "min": 0,
+        "max": 0
+      },
+      {
+        "name": "深谷电量（kwh）_总和_变化值",
+        "type": "numeric",
+        "examples": [
+          "0",
+          "0",
+          "0"
+        ],
+        "unit": "kWh",
+        "min": 0,
+        "max": 0
+      },
+      {
+        "name": "深谷电量（kwh）_总和_变化率",
+        "type": "numeric",
+        "examples": [
+          "0",
+          "0",
+          "0"
+        ],
+        "unit": "%",
+        "min": 0,
+        "max": 0
+      },
+      {
+        "name": "站点类型",
+        "type": "categorical",
+        "examples": [
+          "nan",
+          "单位内部(专用)"
+        ],
+        "unit": "none",
+        "min": "n/a",
+        "max": "n/a"
+      },
+      {
+        "name": "建设场所",
+        "type": "categorical",
+        "examples": [
+          "nan",
+          "企业专用"
+        ],
+        "unit": "none",
+        "min": "n/a",
+        "max": "n/a"
+      },
+      {
+        "name": "所属区域",
+        "type": "categorical",
+        "examples": [
+          "nan",
+          "城区"
+        ],
+        "unit": "none",
+        "min": "n/a",
+        "max": "n/a"
+      },
+      {
+        "name": "对外开放",
+        "type": "categorical",
+        "examples": [
+          "nan",
+          "否"
+        ],
+        "unit": "none",
+        "min": "n/a",
+        "max": "n/a"
+      },
+      {
+        "name": "停车费类型",
+        "type": "categorical",
+        "examples": [
+          "nan",
+          "收费"
+        ],
+        "unit": "none",
+        "min": "n/a",
+        "max": "n/a"
+      },
+      {
+        "name": "停车费描述",
+        "type": "text",
+        "examples": [
+          "nan",
+          "停车费用，根据场站实际情况收取"
+        ],
+        "unit": "none",
+        "min": "n/a",
+        "max": "n/a"
+      },
+      {
+        "name": "桩数量",
+        "type": "text",
+        "examples": [
+          "nan",
+          "直流0 | 交流4"
+        ],
+        "unit": "none",
+        "min": "n/a",
+        "max": "n/a"
+      },
+      {
+        "name": "创建时间",
+        "type": "datetime",
+        "examples": [
+          "nan",
+          "2023-09-15 17:04:38"
+        ],
+        "unit": "none",
+        "min": "n/a",
+        "max": "2023-09-15 17:04:38"
+      }
+    ],
+    "formulas": [
+      "交易流水号_数量_变化值 = 交易流水号_数量_当前值 - 交易流水号_数量_对比值",
+      "交易流水号_数量_变化率 = (交易流水号_数量_变化值 / 交易流水号_数量_对比值) * 100",
+      "峰电量（kwh）_总和_变化值 = 峰电量（kwh）_总和_当前值 - 峰电量（kwh）_总和_对比值",
+      "峰电量（kwh）_总和_变化率 = (峰电量（kwh）_总和_变化值 / 峰电量（kwh）_总和_对比值) * 100"
+    ],
+    "hierarchy": "The dataset appears to have a hierarchical structure where '充电站' (charging station) may be the top-level entity, and other columns provide details about transactions, energy usage, and operational characteristics.",
+    "time_series": true,
+    "candidate_pk": [],
+    "possible_fk": [],
+    "subtotal_cols": [],
+    "subtotal_rows": false
+  },
+  "memory": "[{\"-depth\": \"The analysis lacks a thorough examination of cross-variable interactions, such as how station location and energy consumption patterns correlate. To address this, include a multivariate analysis that explores these relationships to uncover deeper insights.\"}, {\"-depth\": [\"The analysis fails to explore cross-variable interactions, such as the relationship between charging station utilization and order channel performance. To fix this, conduct a multivariate analysis to identify how specific order channels impact utilization rates and energy consumption patterns.\"]}, {\"-depth\": [\"The analysis does not sufficiently explore cross-variable interactions, such as the relationship between station utilization and energy consumption during peak and off-peak hours. To address this, perform a time-series analysis segmented by station utilization levels to identify patterns and anomalies in energy usage.\", \"The analysis lacks an examination of how order channel performance impacts energy consumption and operational inefficiencies. To fix this, conduct a regression analysis to quantify the influence of different order channels on energy usage and identify potential inefficiencies.\", \"The absence of a detailed exploration of station location and its correlation with utilization and energy consumption is a significant gap. To resolve this, incorporate geospatial analysis to assess how location-specific factors influence these metrics and uncover location-based inefficiencies.\"]}, {\"-depth\": [\"The analysis lacks a detailed exploration of root causes behind operational inefficiencies. To address this, conduct a root cause analysis by segmenting inefficiencies by station type, location, and time of day to identify specific drivers.\", \"The relationship between station location and utilization patterns is not explored. To fix this, perform a geospatial analysis to assess how location-specific factors, such as proximity to urban centers or highways, impact utilization rates.\", \"The analysis does not examine cross-variable interactions between order channel performance and energy consumption. To resolve this, conduct a multivariate regression analysis to quantify how different order channels influence energy usage and identify inefficiencies.\", \"The impact of peak and off-peak hours on energy consumption and station utilization is not analyzed. To address this, perform a time-series analysis segmented by utilization levels during different times of the day to uncover patterns and anomalies.\", \"The novelty of insights is limited due to a lack of advanced analytical techniques. To improve this, incorporate clustering or machine learning models to identify hidden patterns and segment stations or users based on behavior and performance metrics.\"]}]",
+  "iteration": 4,
+  "max_cycles": 5,
+  "domain_fixed": true,
+  "previous_scores": {},
+  "history": [
+    {
+      "iteration": 0,
+      "domain": "Unknown",
+      "scores": {},
+      "analysis_head": ""
+    },
+    {
+      "iteration": 0,
+      "domain": "Electric Vehicle Charging Infrastructure",
+      "scores": {
+        "correctness": 4,
+        "relevance": 4,
+        "coverage": 4,
+        "insightfulness": 4,
+        "novelty": 3,
+        "depth": 3
+      },
+      "analysis_head": "The dataset reveals significant variance in transaction volumes and energy consumption across charging stations. For ins"
+    },
+    {
+      "iteration": 1,
+      "domain": "Electric Vehicle Charging Infrastructure",
+      "scores": {
+        "correctness": 4,
+        "relevance": 4,
+        "coverage": 4,
+        "insightfulness": 4,
+        "novelty": 4,
+        "depth": 3
+      },
+      "analysis_head": "The dataset reveals significant variance in transaction volumes and energy consumption across charging stations. For ins"
+    },
+    {
+      "iteration": 2,
+      "domain": "Electric Vehicle Charging Infrastructure",
+      "scores": {
+        "correctness": 4,
+        "relevance": 4,
+        "coverage": 4,
+        "insightfulness": 4,
+        "novelty": 3,
+        "depth": 3
+      },
+      "analysis_head": "The dataset reveals significant variance in transaction volumes and energy consumption across charging stations. For ins"
+    },
+    {
+      "iteration": 3,
+      "domain": "Electric Vehicle Charging Infrastructure",
+      "scores": {
+        "correctness": 4,
+        "relevance": 4,
+        "coverage": 4,
+        "insightfulness": 4,
+        "novelty": 3,
+        "depth": 3
+      },
+      "analysis_head": "The dataset reveals significant variance in energy consumption patterns across peak, off-peak, and valley hours, with pe"
+    },
+    {
+      "iteration": 4,
+      "domain": "Electric Vehicle Charging Infrastructure",
+      "scores": {
+        "correctness": 4,
+        "relevance": 4,
+        "coverage": 4,
+        "insightfulness": 4,
+        "novelty": 3,
+        "depth": 3
+      },
+      "analysis_head": "The dataset reveals significant variance in energy consumption across peak, off-peak, and valley hours, with peak energy"
+    }
+  ],
+  "domain_info": {
+    "domain": "Electric Vehicle Charging Infrastructure",
+    "definition": "The dataset pertains to the management, operation, and analysis of electric vehicle charging stations, including transaction data, energy usage, and operational characteristics.",
+    "wiki_url": "https://en.wikipedia.org/wiki/Electric_vehicle_charging_station"
+  },
+  "concepts": [
+    {
+      "concepts": [
+        "Charging Station Utilization",
+        "Energy Consumption Patterns",
+        "Order Channel Performance",
+        "Geospatial Analysis of Charging Stations",
+        "Peak and Off-Peak Energy Usage",
+        "Operational Inefficiencies in EV Charging"
+      ]
+    }
+  ],
+  "analysis": {
+    "domain": "Electric Vehicle Charging Infrastructure",
+    "core_concepts": [
+      "Charging Station Utilization",
+      "Energy Consumption Patterns",
+      "Order Channel Performance",
+      "Geospatial Analysis of Charging Stations",
+      "Peak and Off-Peak Energy Usage",
+      "Operational Inefficiencies in EV Charging"
+    ],
+    "analysis": {
+      "descriptive": "The dataset reveals significant variance in energy consumption across peak, off-peak, and valley hours, with peak energy usage reaching up to 41,429 kWh and valley usage peaking at 70,462 kWh. Order channel performance shows a wide range of utilization rates, with e充电微信小程序 demonstrating high variability in transaction growth rates, ranging from -100% to 5,369%. Additionally, operational inefficiencies are evident in stations with zero energy consumption and low transaction volumes, suggesting underutilization or mismanagement. Geospatial factors, such as station location and proximity to urban centers, remain unexplored but could provide critical insights into utilization patterns.",
+      "predictive": "Regression analysis could predict the impact of order channel performance on energy consumption, identifying which channels drive higher utilization rates. Time-series forecasting can model energy consumption trends during peak and off-peak hours, enabling better resource allocation and operational planning. Machine learning clustering could segment stations based on utilization and inefficiency metrics, uncovering hidden patterns and enabling targeted interventions to improve performance.",
+      "domain_related": "The dataset highlights opportunities to optimize EV charging infrastructure by addressing inefficiencies in station utilization and energy consumption. A PESTEL analysis suggests that technological advancements, such as smart charging systems, could enhance operational efficiency, while regulatory incentives for green energy adoption may drive higher utilization rates. Geospatial analysis could identify strategic locations for new stations, improving accessibility and reducing operational inefficiencies. Benchmarking against industry standards for energy consumption and transaction volumes could further refine operational strategies."
+    }
+  },
+  "evaluation": "The domain and concepts are well-aligned with the dataset, and the analysis provides meaningful insights into the data. However, the analysis could delve deeper into cross-variable interactions and root causes for inefficiencies.",
+  "scores": {
+    "correctness": 4,
+    "relevance": 4,
+    "coverage": 4,
+    "insightfulness": 4,
+    "novelty": 3,
+    "depth": 3
+  },
+  "domain_ok": true,
+  "concepts_ok": true
+}

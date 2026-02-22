@@ -142,7 +142,7 @@ def _raw_stats(df: pd.DataFrame, n: int = 5) -> Dict[str, Any]:
 def build_profile(csv_path: str) -> Dict[str, Any]:
     df = pd.read_csv(csv_path)
     raw = _raw_stats(df)
-    llm_response = profile_chain.invoke({"raw_preview": json.dumps(raw, cls=NumpyEncoder)})
+    llm_response = profile_chain.invoke({"raw_preview": json.dumps(raw, cls=NumpyEncoder, ensure_ascii=False)})
     # Extract content from AIMessage
     if hasattr(llm_response, 'content'):
         llm_enriched = llm_response.content
@@ -191,7 +191,13 @@ analysis_chain = ANALYSIS_PROMPT | llm
 EVAL_PROMPT = PromptTemplate(
     input_variables=["domain_info", "concepts", "analysis", "profile"],
     template=(
-        "You are an evaluation agent.\n\n"
+        "Profile (JSON):\n{profile}\n\n"
+        "Domain info (JSON):\n{domain_info}\n\n"
+        "Concepts (JSON):\n{concepts}\n\n"
+        "Analysis (JSON):\n{analysis}\n\n"
+        "You are an evaluation agent.\n"
+        "Use integer scores from 0 to 4 (0=missing/incorrect, 4=excellent).\n"
+        "Use ONLY the JSON shown above; do not claim missing context unless those fields are empty.\n\n"
         "**Part A – Domain & Concepts**\n"
         "• correctness : is the domain label factually accurate for this dataset?\n"
         "• relevance   : do the concepts correspond to real columns / metrics present?\n"
@@ -279,7 +285,7 @@ def domain_node(state):
 
     # 2. Ensure profile is a JSON string for the prompt
     profile_json = (
-        json.dumps(state["profile"], cls=NumpyEncoder)
+        json.dumps(state["profile"], cls=NumpyEncoder, ensure_ascii=False)
         if isinstance(state["profile"], dict)
         else state["profile"]
     )
@@ -328,10 +334,10 @@ def concept_node(state):
     memory_json = serialize_memory(state.get("memory"))
 
     response = concept_chain.invoke({
-        "profile"    : json.dumps(state["profile"], cls=NumpyEncoder)
+        "profile"    : json.dumps(state["profile"], cls=NumpyEncoder, ensure_ascii=False)
                        if isinstance(state["profile"], dict)
                        else state["profile"],
-        "domain_info": json.dumps(state["domain_info"]),
+        "domain_info": json.dumps(state["domain_info"], ensure_ascii=False),
         "memory"     : memory_json
     })
 
@@ -372,11 +378,11 @@ def analysis_node(state):
     memory_json = serialize_memory(state.get("memory"))
 
     response = analysis_chain.invoke({
-        "profile"    : json.dumps(state["profile"], cls=NumpyEncoder)
+        "profile"    : json.dumps(state["profile"], cls=NumpyEncoder, ensure_ascii=False)
                        if isinstance(state["profile"], dict)
                        else state["profile"],
-        "domain_info": json.dumps(state["domain_info"]),
-        "concepts"   : json.dumps(state["concepts"]),
+        "domain_info": json.dumps(state["domain_info"], ensure_ascii=False),
+        "concepts"   : json.dumps(state["concepts"], ensure_ascii=False),
         "memory"     : memory_json
     })
 
@@ -432,22 +438,22 @@ def eval_node(state):
         # Ensure all inputs are properly serialized
         domain_info = state["domain_info"]
         if isinstance(domain_info, dict):
-            domain_info = json.dumps(domain_info)
+            domain_info = json.dumps(domain_info, ensure_ascii=False)
         
         # Handle concepts (could be list or string)
         concepts = state["concepts"]
         if isinstance(concepts, (list, dict)):
-            concepts = json.dumps(concepts)
+            concepts = json.dumps(concepts, ensure_ascii=False)
         
         # Handle analysis (could be dict or string)
         analysis = state["analysis"]
         if isinstance(analysis, dict):
-            analysis = json.dumps(analysis)
+            analysis = json.dumps(analysis, ensure_ascii=False)
         
         # Ensure profile is properly serialized
         profile = state["profile"]
         if isinstance(profile, dict):
-            profile = json.dumps(profile, cls=NumpyEncoder)
+            profile = json.dumps(profile, cls=NumpyEncoder, ensure_ascii=False)
         
         response = eval_chain.invoke({
             "domain_info": domain_info,
@@ -610,7 +616,7 @@ def reflect_node(state):
         
         try:
             # Ensure evaluation payload is properly serialized
-            eval_json = json.dumps(eval_payload)
+            eval_json = json.dumps(eval_payload, ensure_ascii=False)
             
             response = reflect_chain.invoke({
                 "evaluation": eval_json,
@@ -644,7 +650,7 @@ def reflect_node(state):
     iteration = state.get("iteration", 0) + 1
     
     # Format memory for next iteration
-    formatted_memory = json.dumps(combined_reflections)
+    formatted_memory = json.dumps(combined_reflections, ensure_ascii=False)
     
     # Preserve domain_fixed flag explicitly
     domain_fixed = state.get("domain_fixed", False)

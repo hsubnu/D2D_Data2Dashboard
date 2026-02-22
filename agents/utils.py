@@ -14,16 +14,16 @@ def serialize_memory(mem) -> str:
         try:
             parsed = json.loads(mem)
             if isinstance(parsed, list):
-                return json.dumps(parsed)
-            return json.dumps([parsed])
+                return json.dumps(parsed, ensure_ascii=False)
+            return json.dumps([parsed], ensure_ascii=False)
         except json.JSONDecodeError:
-            return json.dumps([mem])
+            return json.dumps([mem], ensure_ascii=False)
 
     if isinstance(mem, list):
-        return json.dumps(mem)
+        return json.dumps(mem, ensure_ascii=False)
 
     if isinstance(mem, dict):
-        return json.dumps([mem])
+        return json.dumps([mem], ensure_ascii=False)
 
     # fallback
     return "[]"
